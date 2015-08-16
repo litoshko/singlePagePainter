@@ -6,8 +6,16 @@
 	<script type="text/javascript" src="js/script.js"></script>
 	</head>
 <body>
-
+	<div id="menu">
+		<h2>Draw your image below</h2>
+		<p>You can choose the size of drawing space resolution:</p>
+		<form>
+			<label for="size">Size:</label>
+			<input type="text" id="size" value="16" />
+			<button type="button" onclick="makePage()">Change size</button>
+		</form>
+	</div>
 	<div id="matrix"></div>
-	<script>makePage(N);</script>
+	<script>makePage();</script>
 </body>
 </html>
